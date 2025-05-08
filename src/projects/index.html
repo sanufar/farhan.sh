@@ -1,71 +1,211 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/styles.css" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <title>Projects</title>
-  </head>
-  <body>
-    <div class="flex min-h-[100svh] flex-col justify-between bg-amber-100/15 p-12 pb-0 md:py-8">
-      <div>
-        <div class="mx-auto max-w-[700px]">
-          <div class="mb-4 flex flex-1 items-center justify-between pl-1">
-            <a href="/" class="flex flex-col items-center">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="h-[44px] w-[44px]">
-                <defs>
-                  <filter id="noise" x="-30%" y="-30%" width="160%" height="160%">
-                    <feTurbulence type="fractalNoise" baseFrequency="0.12" numOctaves="6" seed="2" result="turb" />
-                    <feDisplacementMap in="SourceGraphic" in2="turb" scale="12" xChannelSelector="R" yChannelSelector="G" />
-                  </filter>
-                </defs>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/styles.css" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <title>Projects</title>
+    </head>
+    <body>
+        <div
+            class="flex min-h-[100dvh] flex-col justify-between bg-amber-100/15 p-12 md:py-8"
+        >
+            <div>
+                <div class="mx-auto max-w-[700px]">
+                    <div
+                        class="mb-4 flex flex-1 items-center justify-between pl-1"
+                    >
+                        <a href="/" class="flex flex-col items-center">
+                            <svg
+                                viewBox="0 0 100 100"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-[44px] w-[44px]"
+                            >
+                                <defs>
+                                    <filter
+                                        id="noise"
+                                        x="-30%"
+                                        y="-30%"
+                                        width="160%"
+                                        height="160%"
+                                    >
+                                        <feTurbulence
+                                            type="fractalNoise"
+                                            baseFrequency="0.12"
+                                            numOctaves="6"
+                                            seed="2"
+                                            result="turb"
+                                        />
+                                        <feDisplacementMap
+                                            in="SourceGraphic"
+                                            in2="turb"
+                                            scale="12"
+                                            xChannelSelector="R"
+                                            yChannelSelector="G"
+                                        />
+                                    </filter>
+                                </defs>
 
-                <g filter="url(#noise)">
-                  <circle cx="50" cy="50" r="50" class="fill-green-600" />
-                  <circle cx="50" cy="50" r="40" class="fill-lime-500" />
-                  <circle cx="50" cy="50" r="30" class="fill-yellow-400" />
-                  <circle cx="50" cy="50" r="20" class="fill-amber-100" />
-                  <circle cx="50" cy="50" r="10" class="fill-red-300" />
-                </g>
-              </svg>
-              <p class="font-bold italic">farhan.sh</p>
-            </a>
-            <nav class="mb-4 justify-end flex flex-wrap gap-4 gap-y-2 font-mono">
-              <a href="/blog">
-                <span class="nav-item-aux decoration-green-600/60">BLOG</span>
-              </a>
-              <a href="/projects">
-                <span class="nav-item-aux decoration-lime-500/60">PROJECTS</span>
-              </a>
-              <a href="/now">
-                <span class="nav-item-aux decoration-yellow-400/70">NOW</span>
-              </a>
-              <a href="/linkroll" class="w-full text-right sm:m-0 sm:w-auto sm:text-left">
-                <span class="nav-item-aux decoration-red-400/70">LINKROLL</span>
-              </a>
-            </nav>
-          </div>
-          <div class="mb-8">
-            <div class="page-title">
-              <h1>PROJECTS</h1>
+                                <g filter="url(#noise)">
+                                    <circle
+                                        cx="50"
+                                        cy="50"
+                                        r="50"
+                                        class="fill-green-600"
+                                    />
+                                    <circle
+                                        cx="50"
+                                        cy="50"
+                                        r="40"
+                                        class="fill-lime-500"
+                                    />
+                                    <circle
+                                        cx="50"
+                                        cy="50"
+                                        r="30"
+                                        class="fill-yellow-400"
+                                    />
+                                    <circle
+                                        cx="50"
+                                        cy="50"
+                                        r="20"
+                                        class="fill-amber-100"
+                                    />
+                                    <circle
+                                        cx="50"
+                                        cy="50"
+                                        r="10"
+                                        class="fill-red-300"
+                                    />
+                                </g>
+                            </svg>
+                            <p class="font-bold italic">farhan.sh</p>
+                        </a>
+                        <nav class="nav-header">
+                            <a href="/blog">
+                                <span
+                                    class="nav-item-aux decoration-green-600/60"
+                                    >BLOG</span
+                                >
+                            </a>
+                            <a href="/projects">
+                                <span
+                                    class="nav-item-aux decoration-lime-500/60"
+                                    >PROJECTS</span
+                                >
+                            </a>
+                            <a href="/now">
+                                <span
+                                    class="nav-item-aux decoration-yellow-400/70"
+                                    >NOW</span
+                                >
+                            </a>
+                            <a
+                                href="/linkroll"
+                                class="w-full text-right sm:m-0 sm:w-auto sm:text-left"
+                            >
+                                <span class="nav-item-aux decoration-red-400/70"
+                                    >LINKROLL</span
+                                >
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="mb-8">
+                        <div class="page-title">
+                            <h1>PROJECTS</h1>
+                        </div>
+                        <p class="text-slate-600">
+                            fun experiments sometimes accompanied by notes
+                        </p>
+                    </div>
+
+                    <div class="pl-1 md:flex">
+                        <ul class="flex flex-col gap-6">
+                            <li>
+                                <a
+                                    href="https://crates.io/crates/spleen-font"
+                                    class="project-link"
+                                    >spleen-font-rs</a
+                                >
+                                <p>
+                                    PSF1/2 bitmap font renderer in no_std Rust.
+                                    Built for my x86-64 operating system and
+                                    published on crates.io as a separate
+                                    library. Bundles the
+                                    <a
+                                        href="https://github.com/fcambus/spleen"
+                                        class="underline decoration-blue-500 text-blue-500"
+                                        >Spleen font</a
+                                    >
+                                    behind a few feature flags as well.
+                                </p>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://github.com/sanufar/karkinOS"
+                                    class="project-link"
+                                    >karkinOS</a
+                                >
+                                <p>
+                                    An x86-64 operating system written in Rust.
+                                </p>
+                            </li>
+                            <li>
+                                <a href="" class="project-link">BlueGeist</a>
+                                <p>
+                                    A RAG powered look into the last ~week of
+                                    all Bluesky posts. Uses the Bluesky
+                                    Jetstream to ingest likes and posts from the
+                                    firehose, batch creates embeddings, and
+                                    stores them in a vector database to be
+                                    queried by search or fed as context to an
+                                    LLM.
+                                </p>
+                            </li>
+                            <li>
+                                <a href="" class="project-link">keev</a>
+                                <p>
+                                    An LSM-tree based key/value store with a
+                                    shared-nothing approach (see ScyllaDB)
+                                    making use of <code>io_uring</code> via
+                                    <code>glommio</code>. Being written as an
+                                    exercise while reading Alex Petrov's
+                                    <em>Database Internals</em>.
+                                </p>
+                            </li>
+                            <li>
+                                <a href="" class="project-link"
+                                    >whisper-stream-rs</a
+                                >
+                                <p>
+                                    Implementing whisper.cpp's streaming example
+                                    in Rust. Packages and resamples a set
+                                    "step-count" interval of audio samples using
+                                    <code>cpal</code> + <code>rubato</code> and
+                                    passes them along to a whisper.cpp ggml for
+                                    transcription. Uses a
+                                    <code>crossbeam</code> for realtime
+                                    transcription via a pipelined intake/output
+                                    thread. (working on implementing VAD,
+                                    proving tricky)
+                                </p>
+                            </li>
+                            <li>
+                                <a href="" class="project-link">farhan.sh</a>
+                                <p>
+                                    This website! Mostly static HTML and CSS.
+                                    Parses Markdown->HTML via
+                                    <code>pulldown-cmark</code> and Askama
+                                    templates. Uses TailwindCSS for styling.
+                                    Served on Cloudflare Pages as of right now
+                                    (May 8, 2025)!
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <p class="text-slate-600">fun experiments sometimes accompanied by notes</p>
-          </div>
-
-          <div class="pl-1 md:flex">
-            <ul class="flex flex-col gap-3">
-              <li><a href="https://crates.io/crates/spleen-font" class="project-link">spleen-font-rs</a>: A PSF1/2 bitmap font renderer in no_std Rust. Built for my x86-64 operating system, published on crates.io as a separate library. Bundles the <a href="https://github.com/fcambus/spleen" class="project-link">Spleen font</a> behind a few feature flags as well.</li>
-              <li><a href="https://github.com/sanufar/karkinOS" class="project-link">karkinOS</a>: An x86-64 operating system written in Rust.</li>
-              <li><a href="" class="project-link">BlueGeist</a>: A RAG powered look into the last ~week of all Bluesky posts. Uses the Bluesky Jetstream to ingest likes and posts from the firehose, batch creates embeddings, and stores them in a vector database to be queried by search or fed as context to an LLM.</li>
-              <li><a href="" class="project-link">keev</a>: An LSM-tree based key/value store with a shared-nothing approach (see ScyllaDB) making use of <code>io_uring</code> via <code>glommio</code>. Being written as an exercise while reading Alex Petrov's <em>Database Internals</em>.</li>
-              <li><a href="" class="project-link">whisper-stream-rs</a>: Implementing whisper.cpp's streaming example in Rust. Packages and resamples a set "step-count" interval of audio samples using <code>cpal</code> + <code>rubato</code> and passes them along to a whisper.cpp ggml for transcription. Uses a <code>crossbeam</code> for realtime transcription via a pipelined intake/output thread. (working on implementing VAD, proving tricky)</li>
-              <li><a href="" class="project-link">farhan.sh</a>: This website! Mostly static HTML and CSS. Parses Markdown->HTML via <code>pulldown-cmark</code> and Askama templates. Uses TailwindCSS for styling. Served on Cloudflare Pages as of right now (May 8, 2025)!</li>
-            </ul>
-          </div>
         </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
-
