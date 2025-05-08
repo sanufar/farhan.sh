@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <div class="flex min-h-[100svh] flex-col justify-between bg-amber-100/15 p-12 pb-0 md:py-8">
+      <div>
+        <div class="mx-auto max-w-[700px]">
+          <div class="mb-4 flex flex-1 items-center justify-between pl-1">
+            <a href="/" class="flex flex-col items-center">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="h-[44px] w-[44px]">
+                <defs>
+                  <filter id="noise" x="-30%" y="-30%" width="160%" height="160%">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.12" numOctaves="6" seed="2" result="turb" />
+                    <feDisplacementMap in="SourceGraphic" in2="turb" scale="12" xChannelSelector="R" yChannelSelector="G" />
+                  </filter>
+                </defs>
+
+                <g filter="url(#noise)">
+                  <circle cx="50" cy="50" r="50" class="fill-green-600" />
+                  <circle cx="50" cy="50" r="40" class="fill-lime-500" />
+                  <circle cx="50" cy="50" r="30" class="fill-yellow-400" />
+                  <circle cx="50" cy="50" r="20" class="fill-amber-100" />
+                  <circle cx="50" cy="50" r="10" class="fill-red-300" />
+                </g>
+              </svg>
+              <p class="font-bold italic">farhan.sh</p>
+            </a>
+            <nav class="mb-4 flex gap-4 font-mono">
+              <a href="/blog">
+                <span class="nav-item-aux decoration-green-600/60">BLOG</span>
+              </a>
+              <a href="/projects">
+                <span class="nav-item-aux decoration-lime-500/60">PROJECTS</span>
+              </a>
+              <a href="/now">
+                <span class="nav-item-aux decoration-yellow-400/70">NOW</span>
+              </a>
+              <a href="/linkroll">
+                <span class="nav-item-aux decoration-red-400/70">LINKROLL</span>
+              </a>
+            </nav>
+          </div>
+          <div class="mb-8 page-title">
+            <h1>BLOG</h1>
+          </div>
+
+          <div class="pl-1 md:flex">
+            <div class="blog-year-list">
+              <ul>
+                <li class="pb-1">
+                  <a href="#year_2025">2025</a>
+                </li>
+                <li class="pb-1">
+                  <a href="#year_2024">2024</a>
+                </li>
+                <li class="pb-1">
+                  <a href="#year_2023">2023</a>
+                </li>
+                <li class="pb-1">
+                  <a href="#year_2022">2022</a>
+                </li>
+              </ul>
+            </div>
+            <div class="blog-list">
+              <h2 id="year_2025" class="blog-year-header">2025</h2>
+              <ul>
+                <li class="blog-list-post-container">
+                  <div class="mb-2">
+                    <a href="/" class="blog-list-post-title">First Post!</a>
+                    <span class="blog-list-post-date">April&nbsp;28,&nbsp;2025</span>
+                  </div>
+                  <p class="blog-list-post-description">Right now, I'm just sorting out templating and transitioning to a static site generator.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
