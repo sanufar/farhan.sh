@@ -73,5 +73,14 @@
   .now-date-header {
     @apply text-xl font-bold tracking-tighter;
   }
+
+  .project-link {
+    @apply underline text-blue-500 decoration-blue-500
+  }
+
+  .linkroll-link {
+    @apply text-red-600/70 underline decoration-red-300 font-bold
+  }
+
 }
 

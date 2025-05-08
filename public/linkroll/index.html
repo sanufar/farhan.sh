@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="/assets/styles.css">
-	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-	<title>Blog</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Projects</title>
   </head>
   <body>
     <div class="flex min-h-[100svh] flex-col justify-between bg-amber-100/15 p-12 pb-0 md:py-8">
@@ -46,34 +46,29 @@
               </a>
             </nav>
           </div>
-          <div class="mb-8 page-title">
-            <h1>BLOG</h1>
+          <div class="mb-6">
+            <div class="page-title">
+              <h1>LINKROLL</h1>
+            </div>
+            <p class="text-slate-600">
+              my reading list, mostly because I don't want hundreds of tabs <br />
+              across 3 devices anymore; this page will slowly, eventually, gradually, be filled
+            </p>
           </div>
 
           <div class="pl-1 md:flex">
-            <div class="blog-year-list">
-              <ul>
-                <li class="pb-1">
-                  <a href="#year_2025">2025</a>
-                </li>
-              </ul>
-            </div>
-            <div class="blog-list">
-              <h2 id="year_2025" class="blog-year-header">2025</h2>
-              <ul>
-                <li class="blog-list-post-container">
-                  <div class="mb-2">
-                    <a href="/" class="blog-list-post-title">First Post!</a>
-                    <span class="blog-list-post-date">April&nbsp;28,&nbsp;2025</span>
-                  </div>
-                  <p class="blog-list-post-description">Right now, I'm just sorting out templating and transitioning to a static site generator.</p>
-                </li>
-              </ul>
-            </div>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <a href="https://db.cs.cmu.edu/papers/2018/mod601-zhangA-hm.pdf" class="linkroll-link">SuRF: Practical Range Query Filtering with Fast Succinct Tries</a>
+              </li>
+              <li>
+                <a href="https://simonwillison.net/2024/Dec/22/link-blog/" class="linkroll-link">My approach to running a link blog</a> ::
+                <span class="italic">The inspiration for this page. I needed a way to archive all of the cool links I had been saving for later and stumbled upon this post in a HackerNews thread.</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </body>
 </html>
-
