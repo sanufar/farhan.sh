@@ -17,7 +17,7 @@
 
 @layer components {
 	.header-icon {
-		@apply sm:h-[28px] sm:w-[28px] h-[20px] w-[20px]
+		@apply sm:h-[28px] sm:w-[28px] h-[22px] w-[22px]
 	}
     .logo-ring {
         @apply h-[120px] w-[120px];
