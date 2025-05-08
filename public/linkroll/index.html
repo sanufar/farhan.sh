@@ -1,154 +1,98 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/assets/styles.css" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <title>Projects</title>
-    </head>
-    <body>
-        <div
-            class="flex min-h-[100svh] flex-col justify-between bg-amber-100/15 p-12 pb-0 md:py-8"
-        >
-            <div>
-                <div class="mx-auto max-w-[700px]">
-                    <div
-                        class="mb-4 flex flex-1 items-center justify-between pl-1"
-                    >
-                        <a href="/" class="flex flex-col items-center">
-                            <svg
-                                viewBox="0 0 100 100"
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-[44px] w-[44px]"
-                            >
-                                <defs>
-                                    <filter
-                                        id="noise"
-                                        x="-30%"
-                                        y="-30%"
-                                        width="160%"
-                                        height="160%"
-                                    >
-                                        <feTurbulence
-                                            type="fractalNoise"
-                                            baseFrequency="0.12"
-                                            numOctaves="6"
-                                            seed="2"
-                                            result="turb"
-                                        />
-                                        <feDisplacementMap
-                                            in="SourceGraphic"
-                                            in2="turb"
-                                            scale="12"
-                                            xChannelSelector="R"
-                                            yChannelSelector="G"
-                                        />
-                                    </filter>
-                                </defs>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <div class="flex min-h-[100svh] flex-col justify-between bg-amber-100/15 p-12 pb-0 md:py-8">
+      <div>
+        <div class="mx-auto max-w-[700px]">
+          <div class="mb-4 flex flex-1 items-center justify-between pl-1">
+            <a href="/" class="flex flex-col items-center">
+              <svg
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-[44px] w-[44px]"
+              >
+                <defs>
+                  <filter id="noise" x="-30%" y="-30%" width="160%" height="160%">
+                    <feTurbulence
+                      type="fractalNoise"
+                      baseFrequency="0.12"
+                      numOctaves="6"
+                      seed="2"
+                      result="turb"
+                    />
+                    <feDisplacementMap
+                      in="SourceGraphic"
+                      in2="turb"
+                      scale="12"
+                      xChannelSelector="R"
+                      yChannelSelector="G"
+                    />
+                  </filter>
+                </defs>
 
-                                <g filter="url(#noise)">
-                                    <circle
-                                        cx="50"
-                                        cy="50"
-                                        r="50"
-                                        class="fill-green-600"
-                                    />
-                                    <circle
-                                        cx="50"
-                                        cy="50"
-                                        r="40"
-                                        class="fill-lime-500"
-                                    />
-                                    <circle
-                                        cx="50"
-                                        cy="50"
-                                        r="30"
-                                        class="fill-yellow-400"
-                                    />
-                                    <circle
-                                        cx="50"
-                                        cy="50"
-                                        r="20"
-                                        class="fill-amber-100"
-                                    />
-                                    <circle
-                                        cx="50"
-                                        cy="50"
-                                        r="10"
-                                        class="fill-red-300"
-                                    />
-                                </g>
-                            </svg>
-                            <p class="font-bold italic">farhan.sh</p>
-                        </a>
-                        <nav class="nav-header">
-                            <a href="/blog">
-                                <span
-                                    class="nav-item-aux decoration-green-600/60"
-                                    >BLOG</span
-                                >
-                            </a>
-                            <a href="/projects">
-                                <span
-                                    class="nav-item-aux decoration-lime-500/60"
-                                    >PROJECTS</span
-                                >
-                            </a>
-                            <a href="/now">
-                                <span
-                                    class="nav-item-aux decoration-yellow-400/70"
-                                    >NOW</span
-                                >
-                            </a>
-                            <a
-                                href="/linkroll"
-                                class="w-full text-right sm:m-0 sm:w-auto sm:text-left"
-                            >
-                                <span class="nav-item-aux decoration-red-400/70"
-                                    >LINKROLL</span
-                                >
-                            </a>
-                        </nav>
-                    </div>
-                    <div class="mb-6">
-                        <div class="page-title">
-                            <h1>LINKROLL</h1>
-                        </div>
-                        <p class="text-slate-600">
-                            this page will slowly, eventually, gradually, be
-                            filled
-                        </p>
-                    </div>
-
-                    <div class="pl-1 md:flex">
-                        <ul class="flex flex-col gap-3">
-                            <li>
-                                <a
-                                    href="https://db.cs.cmu.edu/papers/2018/mod601-zhangA-hm.pdf"
-                                    class="linkroll-link"
-                                    >SuRF: Practical Range Query Filtering with
-                                    Fast Succinct Tries</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="https://simonwillison.net/2024/Dec/22/link-blog/"
-                                    class="linkroll-link"
-                                    >My approach to running a link blog</a
-                                >
-                                ::
-                                <span class="italic"
-                                    >The inspiration for this page. I needed a
-                                    way to archive all of the cool links I had
-                                    been saving for later and stumbled upon this
-                                    post in a HackerNews thread.</span
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <g filter="url(#noise)">
+                  <circle cx="50" cy="50" r="50" class="fill-green-600" />
+                  <circle cx="50" cy="50" r="40" class="fill-lime-500" />
+                  <circle cx="50" cy="50" r="30" class="fill-yellow-400" />
+                  <circle cx="50" cy="50" r="20" class="fill-amber-100" />
+                  <circle cx="50" cy="50" r="10" class="fill-red-300" />
+                </g>
+              </svg>
+              <p class="font-bold italic">farhan.sh</p>
+            </a>
+            <nav class="nav-header">
+              <a href="/blog">
+                <span class="nav-item-aux decoration-green-600/60">BLOG</span>
+              </a>
+              <a href="/projects">
+                <span class="nav-item-aux decoration-lime-500/60">PROJECTS</span>
+              </a>
+              <a href="/now">
+                <span class="nav-item-aux decoration-yellow-400/70">NOW</span>
+              </a>
+              <a href="/linkroll" class="w-full text-right sm:m-0 sm:w-auto sm:text-left">
+                <span class="nav-item-aux decoration-red-400/70">LINKROLL</span>
+              </a>
+            </nav>
+          </div>
+          <div class="mb-6">
+            <div class="page-title">
+              <h1>LINKROLL</h1>
             </div>
+            <p class="text-slate-600">this page will slowly, eventually, gradually, be filled</p>
+          </div>
+
+          <div class="pl-1 md:flex">
+            <ul class="flex flex-col gap-3">
+              <li>
+                <a
+                  href="https://db.cs.cmu.edu/papers/2018/mod601-zhangA-hm.pdf"
+                  class="linkroll-link"
+                  >SuRF: Practical Range Query Filtering with Fast Succinct Tries</a
+                >
+              </li>
+              <li>
+                <a href="https://simonwillison.net/2024/Dec/22/link-blog/" class="linkroll-link"
+                  >My approach to running a link blog</a
+                >
+                ::
+                <span class="italic"
+                  >The inspiration for this page. I needed a way to archive all of the cool links I
+                  had been saving for later and stumbled upon this post in a HackerNews
+                  thread.</span
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>

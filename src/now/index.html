@@ -1,171 +1,112 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/assets/styles.css" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <title>Now</title>
-    </head>
-    <body>
-        <div
-            class="flex min-h-[100svh] flex-col justify-between bg-amber-100/15 p-12 pb-0 md:py-8"
-        >
-            <div>
-                <div class="mx-auto max-w-[700px]">
-                    <div
-                        class="mb-4 flex flex-1 items-center justify-between pl-1"
-                    >
-                        <a href="/" class="flex flex-col items-center">
-                            <svg
-                                viewBox="0 0 100 100"
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-[44px] w-[44px]"
-                            >
-                                <defs>
-                                    <filter
-                                        id="noise"
-                                        x="-30%"
-                                        y="-30%"
-                                        width="160%"
-                                        height="160%"
-                                    >
-                                        <feTurbulence
-                                            type="fractalNoise"
-                                            baseFrequency="0.12"
-                                            numOctaves="6"
-                                            seed="2"
-                                            result="turb"
-                                        />
-                                        <feDisplacementMap
-                                            in="SourceGraphic"
-                                            in2="turb"
-                                            scale="12"
-                                            xChannelSelector="R"
-                                            yChannelSelector="G"
-                                        />
-                                    </filter>
-                                </defs>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Now</title>
+  </head>
+  <body>
+    <div class="flex min-h-[100svh] flex-col justify-between bg-amber-100/15 p-12 pb-0 md:py-8">
+      <div>
+        <div class="mx-auto max-w-[700px]">
+          <div class="mb-4 flex flex-1 items-center justify-between pl-1">
+            <a href="/" class="flex flex-col items-center">
+              <svg
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-[44px] w-[44px]"
+              >
+                <defs>
+                  <filter id="noise" x="-30%" y="-30%" width="160%" height="160%">
+                    <feTurbulence
+                      type="fractalNoise"
+                      baseFrequency="0.12"
+                      numOctaves="6"
+                      seed="2"
+                      result="turb"
+                    />
+                    <feDisplacementMap
+                      in="SourceGraphic"
+                      in2="turb"
+                      scale="12"
+                      xChannelSelector="R"
+                      yChannelSelector="G"
+                    />
+                  </filter>
+                </defs>
 
-                                <g filter="url(#noise)">
-                                    <circle
-                                        cx="50"
-                                        cy="50"
-                                        r="50"
-                                        class="fill-green-600"
-                                    />
-                                    <circle
-                                        cx="50"
-                                        cy="50"
-                                        r="40"
-                                        class="fill-lime-500"
-                                    />
-                                    <circle
-                                        cx="50"
-                                        cy="50"
-                                        r="30"
-                                        class="fill-yellow-400"
-                                    />
-                                    <circle
-                                        cx="50"
-                                        cy="50"
-                                        r="20"
-                                        class="fill-amber-100"
-                                    />
-                                    <circle
-                                        cx="50"
-                                        cy="50"
-                                        r="10"
-                                        class="fill-red-300"
-                                    />
-                                </g>
-                            </svg>
-                            <p class="font-bold italic">farhan.sh</p>
-                        </a>
-                        <nav class="nav-header">
-                            <a href="/blog">
-                                <span
-                                    class="nav-item-aux decoration-green-600/60"
-                                    >BLOG</span
-                                >
-                            </a>
-                            <a href="/projects">
-                                <span
-                                    class="nav-item-aux decoration-lime-500/60"
-                                    >PROJECTS</span
-                                >
-                            </a>
-                            <a href="/now">
-                                <span
-                                    class="nav-item-aux decoration-yellow-400/70"
-                                    >NOW</span
-                                >
-                            </a>
-                            <a
-                                href="/linkroll"
-                                class="w-full text-right sm:m-0 sm:w-auto sm:text-left"
-                            >
-                                <span class="nav-item-aux decoration-red-400/70"
-                                    >LINKROLL</span
-                                >
-                            </a>
-                        </nav>
-                    </div>
-                    <div class="mb-8">
-                        <div class="page-title">
-                            <h1>NOW</h1>
-                            <span class="relative mt-1 flex size-2.5">
-                                <span
-                                    class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"
-                                ></span>
-                                <span
-                                    class="relative inline-flex size-2.5 rounded-full bg-green-500"
-                                ></span>
-                            </span>
-                        </div>
-                        <p class="text-slate-600">(created on May 07, 2025)</p>
-                    </div>
-
-                    <div class="pl-1">
-                        <h2 class="now-date-header">May 07, 2025</h2>
-                        <div class="font-serif">
-                            <p class="my-4">
-                                I'm just about to wrap up with final exams! I'll
-                                be in Durham, NC over the summer interning at
-                                <span
-                                    class="underline decoration-2 underline-offset-2 decoration-green-600"
-                                    >Fidelity</span
-                                >, so I've been making a list of nature trails
-                                to go explore.
-                            </p>
-                            <p class="my-4">
-                                In other news, I've been working on porting my
-                                OS to Limine. Refactoring my framebuffer
-                                implementation has brought up a few greatly
-                                needed architectural fixes I had been putting
-                                off before :)
-                            </p>
-                            <p class="mt-4 underline">Currently:</p>
-                            <ul class="list-disc ml-4">
-                                <li class="mb-1">
-                                    Reading through
-                                    <em>Database Internals</em> by Alex Petrov
-                                </li>
-                                <li class="mb-1">
-                                    Working on a shared-nothing k/v store. LSM
-                                    trees with trie memtables seem interesting!
-                                    I'm looking at fanf's
-                                    <a href="https://github.com/fanf2/qp"
-                                        >qp-tries</a
-                                    >
-                                    right now for pointers on space efficient
-                                    prefix trees.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <g filter="url(#noise)">
+                  <circle cx="50" cy="50" r="50" class="fill-green-600" />
+                  <circle cx="50" cy="50" r="40" class="fill-lime-500" />
+                  <circle cx="50" cy="50" r="30" class="fill-yellow-400" />
+                  <circle cx="50" cy="50" r="20" class="fill-amber-100" />
+                  <circle cx="50" cy="50" r="10" class="fill-red-300" />
+                </g>
+              </svg>
+              <p class="font-bold italic">farhan.sh</p>
+            </a>
+            <nav class="nav-header">
+              <a href="/blog">
+                <span class="nav-item-aux decoration-green-600/60">BLOG</span>
+              </a>
+              <a href="/projects">
+                <span class="nav-item-aux decoration-lime-500/60">PROJECTS</span>
+              </a>
+              <a href="/now">
+                <span class="nav-item-aux decoration-yellow-400/70">NOW</span>
+              </a>
+              <a href="/linkroll" class="w-full text-right sm:m-0 sm:w-auto sm:text-left">
+                <span class="nav-item-aux decoration-red-400/70">LINKROLL</span>
+              </a>
+            </nav>
+          </div>
+          <div class="mb-8">
+            <div class="page-title">
+              <h1>NOW</h1>
+              <span class="relative mt-1 flex size-2.5">
+                <span
+                  class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"
+                ></span>
+                <span class="relative inline-flex size-2.5 rounded-full bg-green-500"></span>
+              </span>
             </div>
+            <p class="text-slate-600">(created on May 07, 2025)</p>
+          </div>
+
+          <div class="pl-1">
+            <h2 class="now-date-header">May 07, 2025</h2>
+            <div class="font-serif">
+              <p class="my-4">
+                I'm just about to wrap up with final exams! I'll be in Durham, NC over the summer
+                interning at
+                <span class="underline decoration-green-600 decoration-2 underline-offset-2"
+                  >Fidelity</span
+                >, so I've been making a list of nature trails to go explore.
+              </p>
+              <p class="my-4">
+                In other news, I've been working on porting my OS to Limine. Refactoring my
+                framebuffer implementation has brought up a few greatly needed architectural fixes I
+                had been putting off before :)
+              </p>
+              <p class="mt-4 underline">Currently:</p>
+              <ul class="ml-4 list-disc">
+                <li class="mb-1">
+                  Reading through
+                  <em>Database Internals</em> by Alex Petrov
+                </li>
+                <li class="mb-1">
+                  Working on a shared-nothing k/v store. LSM trees with trie memtables seem
+                  interesting! I'm looking at fanf's
+                  <a href="https://github.com/fanf2/qp">qp-tries</a>
+                  right now for pointers on space efficient prefix trees.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>

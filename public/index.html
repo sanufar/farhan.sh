@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="/assets/styles.css">
-	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-	<title>Farhan Sanukri</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Farhan Sanukri</title>
   </head>
   <body>
     <div class="page-shell">
@@ -14,11 +14,27 @@
           <div class="flex flex-col gap-6 md:gap-4">
             <div class="items-top flex gap-4 md:w-[152px] md:flex-col md:gap-0">
               <a href="/">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="mb-4 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] md:h-[120px] md:w-[120px]">
+                <svg
+                  viewBox="0 0 100 100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mb-4 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] md:h-[120px] md:w-[120px]"
+                >
                   <defs>
                     <filter id="noise" x="-30%" y="-30%" width="160%" height="160%">
-                      <feTurbulence type="fractalNoise" baseFrequency="0.12" numOctaves="6" seed="2" result="turb" />
-                      <feDisplacementMap in="SourceGraphic" in2="turb" scale="12" xChannelSelector="R" yChannelSelector="G" />
+                      <feTurbulence
+                        type="fractalNoise"
+                        baseFrequency="0.12"
+                        numOctaves="6"
+                        seed="2"
+                        result="turb"
+                      />
+                      <feDisplacementMap
+                        in="SourceGraphic"
+                        in2="turb"
+                        scale="12"
+                        xChannelSelector="R"
+                        yChannelSelector="G"
+                      />
                     </filter>
                   </defs>
 
@@ -32,54 +48,139 @@
                 </svg>
               </a>
               <div class="flex flex-col gap-0">
-                <h1 class="text-xl sm:text-[1.375em] md:text-3xl font-bold leading-none mt-2 whitespace-nowrap sm:whitespace-normal">FARHAN SANUKRI</h1>
-                <p class="text-lg md:text-xl italic md:my-2">cs, math @ UNC</p>
-                <nav class="hidden xs:flex flex-row gap-1 sm:gap-1.5 sm:my-1">
+                <h1
+                  class="mt-2 text-xl leading-none font-bold whitespace-nowrap sm:text-[1.375em] sm:whitespace-normal md:text-3xl"
+                >
+                  FARHAN SANUKRI
+                </h1>
+                <p class="text-lg italic md:my-2 md:text-xl">cs, math @ UNC</p>
+                <nav class="xs:flex hidden flex-row gap-1 sm:my-1 sm:gap-1.5">
                   <a href="https://github.com/sanufar">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="header-icon" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      class="header-icon"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"
+                    >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                      <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                      />
                     </svg>
                   </a>
                   <a href="https://linkedin.com/in/farhan-sanukri">
-                 <svg xmlns="http://www.w3.org/2000/svg" class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> </a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="header-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather"
+                    >
+                      <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                      ></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
                   <a href="mailto:farhan.sanukri24@gmail.com">
-<svg  xmlns="http://www.w3.org/2000/svg" class="header-icon" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail-opened"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 9l9 6l9 -6l-9 -6l-9 6" /><path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 19l6 -6" /><path d="M15 13l6 6" /></svg>					</a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="header-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-mail-opened"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M3 9l9 6l9 -6l-9 -6l-9 6" />
+                      <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                      <path d="M3 19l6 -6" />
+                      <path d="M15 13l6 6" />
+                    </svg>
+                  </a>
                 </nav>
               </div>
             </div>
 
             <nav class="font-mono md:flex-col md:gap-0">
               <a href="/blog" class="nav-item">
-                <svg class="nav-square fill-green-600/60" viewBox="0 0 10 10"><rect width="10" height="10" rx="2" /></svg>
-				<span>BLOG</span>
+                <svg class="nav-square fill-green-600/60" viewBox="0 0 10 10">
+                  <rect width="10" height="10" rx="2" />
+                </svg>
+                <span>BLOG</span>
               </a>
               <a href="/projects" class="nav-item">
-                <svg class="nav-square fill-lime-500/60" viewBox="0 0 10 10"><rect width="10" height="10" rx="2" /></svg>
+                <svg class="nav-square fill-lime-500/60" viewBox="0 0 10 10">
+                  <rect width="10" height="10" rx="2" />
+                </svg>
                 <span>PROJECTS</span>
               </a>
 
               <a href="/now" class="nav-item">
-                <svg class="nav-square fill-yellow-400/60" viewBox="0 0 10 10"><rect width="10" height="10" rx="2" /></svg>
+                <svg class="nav-square fill-yellow-400/60" viewBox="0 0 10 10">
+                  <rect width="10" height="10" rx="2" />
+                </svg>
                 <span>NOW</span>
               </a>
               <a href="/linkroll" class="nav-item">
-                <svg class="nav-square fill-red-400/60" viewBox="0 0 10 10"><rect width="10" height="10" rx="2" /></svg>
+                <svg class="nav-square fill-red-400/60" viewBox="0 0 10 10">
+                  <rect width="10" height="10" rx="2" />
+                </svg>
                 <span>LINKROLL</span>
               </a>
             </nav>
           </div>
-          <div class="font-serif md:text-lg md:my-6">
+          <div class="font-serif md:my-6 md:text-lg">
             <p>Hi, I'm Farhan!</p>
-            <p class="my-5">I'm a computer science student pursuing a double major in CS and Math at the <strong>University of North Carolina at Chapel Hill</strong>.</p>
-            <p class="my-5">My interests are in distributed systems, compiler optimizations, and database design. Outside of that, I'm passionate about full-stack development, having worked on both mobile platforms and the web.</p>
-            <p class="my-5">I also do work as a software developer with App Team Carolina, building the iOS app for PORCH Communities to make food donation easier. Previously, I researched meniscus-tear image classification at <strong>Duke University</strong>.</p>
-            <p class="my-5">You can find my resume <a class="text-blue-500 underline underline-offset-2" href="">here</a>. I also like to write about code (and other things) sometimes; my <a class="text-blue-500 underline underline-offset-2" href="/blog">blog</a> and <a class="text-blue-500 underline underline-offset-2" href="/projects">projects</a> are where those live.</p>
-            <p class="my-5 text-base">Feel free to get in touch with me! My email is <br /><em class="underline underline-offset-2">farhan.sanukri24 [at] gmail [dot] com.</em></p>
+            <p class="my-5">
+              I'm a computer science student pursuing a double major in CS and Math at the
+              <strong>University of North Carolina at Chapel Hill</strong>.
+            </p>
+            <p class="my-5">
+              My interests are in distributed systems, compiler optimizations, and database design.
+              Outside of that, I'm passionate about full-stack development, having worked on both
+              mobile platforms and the web.
+            </p>
+            <p class="my-5">
+              I also do work as a software developer with App Team Carolina, building the iOS app
+              for PORCH Communities to make food donation easier. Previously, I researched
+              meniscus-tear image classification at <strong>Duke University</strong>.
+            </p>
+            <p class="my-5">
+              You can find my resume
+              <a class="text-blue-500 underline underline-offset-2" href="">here</a>. I also like to
+              write about code (and other things) sometimes; my
+              <a class="text-blue-500 underline underline-offset-2" href="/blog">blog</a> and
+              <a class="text-blue-500 underline underline-offset-2" href="/projects">projects</a>
+              are where those live.
+            </p>
+            <p class="my-5 text-base">
+              Feel free to get in touch with me! My email is <br /><em
+                class="underline underline-offset-2"
+                >farhan.sanukri24 [at] gmail [dot] com.</em
+              >
+            </p>
           </div>
         </div>
       </div>
-      <footer class="flex pb-3"><span class="m-auto mb-1 px-2 py-1 text-sm select-none md:mb-0">© 2025 Farhan Sanukri.</span></footer>
+      <footer class="flex pb-3">
+        <span class="m-auto mb-1 px-2 py-1 text-sm select-none md:mb-0"
+          >© 2025 Farhan Sanukri.</span
+        >
+      </footer>
     </div>
   </body>
 </html>
