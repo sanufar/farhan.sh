@@ -22,7 +22,7 @@
   }
 
   .nav-item-aux {
-    @apply underline decoration-4;
+    @apply md:text-base text-sm underline decoration-4;
   }
 
   .nav-item {
