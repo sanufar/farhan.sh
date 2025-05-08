@@ -39,10 +39,11 @@
     }
 
     .page-shell {
-        @apply flex min-h-[100svh] flex-col justify-between bg-amber-100/15 px-12 pt-8 pb-0;
+        @apply flex min-h-[100svh] flex-col justify-between bg-amber-100/15 px-12 md:py-12 py-8 pb-0;
     }
+
     .main-col {
-        @apply mx-auto max-w-[700px];
+        @apply mx-auto max-w-[780px];
     }
 
     .nav-header {
