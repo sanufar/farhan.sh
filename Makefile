@@ -1,12 +1,17 @@
-.PHONY: all build
+.PHONY: all serve build copy
 
 all: serve
 
-serve: 
-	npx tailwindcss -i ./src/css/app.css -o ./public/assets/styles.css --minify
-	rsync -av --exclude='*.css' --exclude='/css/' src/ public/
+serve: tailwind-init copy
 	npx serve public
 
-build:
+build: tailwind-init copy          
+
+tailwind-init: 
 	npx tailwindcss -i ./src/css/app.css -o ./public/assets/styles.css --minify
-	rsync -av --exclude='*.css' --exclude='/css/' src/ public/
+	
+copy:
+	@cp -a src/. public/
+	@rm -rf public/css
+	@find public -type f -name '*.css' ! -path 'public/assets/*' -delete
+
