@@ -11,9 +11,14 @@
         "Noto Color Emoji";
 
     --font-serif: "Merriweather", system-ui;
+
+	--breakpoint-xs: 22.5rem;
 }
 
 @layer components {
+	.header-icon {
+		@apply sm:h-[28px] sm:w-[28px] h-[20px] w-[20px]
+	}
     .logo-ring {
         @apply h-[120px] w-[120px];
     }
