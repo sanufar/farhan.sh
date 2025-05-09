@@ -25,7 +25,7 @@
     <div class="page-shell">
       <div class="main-col">
         <div class="flex flex-col justify-center gap-6 md:flex-row md:gap-16">
-          <div class="flex flex-col gap-6 md:gap-4">
+          <div class="flex flex-col gap-2 md:gap-4">
             <div class="items-top flex gap-4 md:w-[152px] md:flex-col md:gap-0">
               <a href="/">
                 <svg
@@ -41,33 +41,33 @@
                         numOctaves="6"
                         seed="2"
                         result="turb"
-                      />
+                      ></feTurbulence>
                       <feDisplacementMap
                         in="SourceGraphic"
                         in2="turb"
                         scale="12"
                         xChannelSelector="R"
                         yChannelSelector="G"
-                      />
+                      ></feDisplacementMap>
                     </filter>
                   </defs>
 
                   <g filter="url(#noise)">
-                    <circle cx="50" cy="50" r="50" class="fill-green-600" />
-                    <circle cx="50" cy="50" r="40" class="fill-lime-500" />
-                    <circle cx="50" cy="50" r="30" class="fill-yellow-400" />
-                    <circle cx="50" cy="50" r="20" class="fill-amber-100" />
-                    <circle cx="50" cy="50" r="10" class="fill-red-300" />
+                    <circle cx="50" cy="50" r="50" class="fill-green-600"></circle>
+                    <circle cx="50" cy="50" r="40" class="fill-lime-500"></circle>
+                    <circle cx="50" cy="50" r="30" class="fill-yellow-400"></circle>
+                    <circle cx="50" cy="50" r="20" class="fill-amber-100"></circle>
+                    <circle cx="50" cy="50" r="10" class="fill-red-300"></circle>
                   </g>
                 </svg>
               </a>
-              <div class="flex flex-col gap-0">
+              <div class="xs:mb-0 mt-2 mb-4 flex flex-col gap-0 md:mt-0">
                 <h1
-                  class="mt-2 text-xl leading-none font-bold whitespace-nowrap sm:text-[1.375em] sm:whitespace-normal md:text-3xl"
+                  class="xs:mt-0 mt-2 text-[1.45em] leading-none font-bold whitespace-nowrap sm:whitespace-normal md:text-3xl"
                 >
                   FARHAN SANUKRI
                 </h1>
-                <p class="text-lg italic md:my-2 md:text-xl">cs, math @ UNC</p>
+                <p class="text-lg italic md:my-1 md:text-xl">cs, math @ UNC</p>
                 <nav class="xs:flex hidden flex-row gap-1 sm:my-1 sm:gap-1.5">
                   <a href="https://github.com/sanufar">
                     <svg
@@ -79,12 +79,11 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"
                     >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path
                         d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                      />
+                      ></path>
                     </svg>
                   </a>
                   <a href="https://linkedin.com/in/farhan-sanukri">
@@ -97,7 +96,6 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="feather"
                     >
                       <path
                         d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
@@ -116,50 +114,49 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-mail-opened"
                     >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M3 9l9 6l9 -6l-9 -6l-9 6" />
-                      <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
-                      <path d="M3 19l6 -6" />
-                      <path d="M15 13l6 6" />
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M3 9l9 6l9 -6l-9 -6l-9 6"></path>
+                      <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"></path>
+                      <path d="M3 19l6 -6"></path>
+                      <path d="M15 13l6 6"></path>
                     </svg>
                   </a>
                 </nav>
               </div>
             </div>
 
-            <nav class="font-mono md:flex-col md:gap-0">
+            <nav class="mt-1 font-mono md:flex-col md:gap-0">
               <a href="/blog" class="nav-item">
                 <svg class="nav-square fill-green-600/60" viewBox="0 0 10 10">
-                  <rect width="10" height="10" rx="2" />
+                  <rect width="10" height="10" rx="2"></rect>
                 </svg>
                 <span>BLOG</span>
               </a>
               <a href="/projects" class="nav-item">
                 <svg class="nav-square fill-lime-500/60" viewBox="0 0 10 10">
-                  <rect width="10" height="10" rx="2" />
+                  <rect width="10" height="10" rx="2"></rect>
                 </svg>
                 <span>PROJECTS</span>
               </a>
 
               <a href="/now" class="nav-item">
                 <svg class="nav-square fill-yellow-400/60" viewBox="0 0 10 10">
-                  <rect width="10" height="10" rx="2" />
+                  <rect width="10" height="10" rx="2"></rect>
                 </svg>
                 <span>NOW</span>
               </a>
               <a href="/linkroll" class="nav-item">
                 <svg class="nav-square fill-red-400/60" viewBox="0 0 10 10">
-                  <rect width="10" height="10" rx="2" />
+                  <rect width="10" height="10" rx="2"></rect>
                 </svg>
                 <span>LINKROLL</span>
               </a>
               <a href="/misc" class="nav-item">
                 <svg class="nav-square fill-zinc-600/60" viewBox="0 0 10 10">
-                  <rect width="10" height="10" rx="2" />
+                  <rect width="10" height="10" rx="2"></rect>
                 </svg>
-                <span>MISC</span>
+                <span>MISCELLANEOUS</span>
               </a>
             </nav>
           </div>

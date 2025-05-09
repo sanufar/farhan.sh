@@ -82,7 +82,7 @@
 
     --font-serif: "Merriweather", system-ui;
 
-	--breakpoint-xs: 22.5rem;
+	--breakpoint-xs: 24rem;
 }
 
 @layer components {
@@ -109,7 +109,7 @@
     }
 
     .page-shell {
-        @apply flex min-h-[100svh] flex-col justify-between bg-amber-100/15 px-12 md:py-12 py-8 pb-0;
+        @apply flex min-h-[100svh] flex-col justify-between bg-amber-100/15 px-8 md:py-12 py-8 pb-0;
     }
 
     .main-col {
