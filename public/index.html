@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/styles.css" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+	<link rel="preload" href="./assets/fonts/manrope-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="./assets/fonts/manrope-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="./assets/fonts/manrope-v15-latin-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<meta name="apple-mobile-web-app-title" content="Farhan S" />
+	<link rel="manifest" href="/assets/site.webmanifest" />
     <title>Farhan Sanukri</title>
   </head>
   <body>
     <div class="page-shell">
       <div class="main-col">
         <div class="flex flex-col justify-center gap-6 md:flex-row md:gap-16">
-          <div class="flex flex-col gap-2 md:gap-4">
+          <div class="flex flex-col gap-0 md:gap-4">
             <div class="items-top flex gap-4 md:w-[152px] md:flex-col md:gap-0">
               <a href="/">
                 <svg
@@ -49,7 +56,7 @@
               </a>
               <div class="xs:mb-0 mt-2 mb-4 flex flex-col gap-0 md:mt-0">
                 <h1
-                  class="xs:mt-0 mt-2 text-[1.45em] leading-none font-bold whitespace-nowrap sm:whitespace-normal md:text-3xl"
+                  class="xs:mt-0 mt-2 text-[1.45em] leading-none font-semibold whitespace-nowrap sm:whitespace-normal md:text-3xl"
                 >
                   FARHAN SANUKRI
                 </h1>
@@ -112,27 +119,26 @@
               </div>
             </div>
 
-            <nav class="mt-1 font-mono md:flex-col md:gap-0">
-              <a href="/blog" class="nav-item">
+            <nav class="justify-end text-[1.1em] flex-wrap font-semibold md:font-medium md:ml-0 gap-x-2 md:mt-1 flex md:flex-col md:gap-0 border-b-4 md:border-none">
+              <a href="/blog" class="nav-item slash-green">
                 <svg class="nav-square fill-green-600/60" viewBox="0 0 10 10">
                   <rect width="10" height="10" rx="2"></rect>
                 </svg>
                 <span>BLOG</span>
               </a>
-              <a href="/projects" class="nav-item">
+              <a href="/projects" class="nav-item slash-limegreen">
                 <svg class="nav-square fill-lime-500/60" viewBox="0 0 10 10">
                   <rect width="10" height="10" rx="2"></rect>
                 </svg>
                 <span>PROJECTS</span>
               </a>
-
-              <a href="/now" class="nav-item">
+              <a href="/now" class="nav-item slash-yellow">
                 <svg class="nav-square fill-yellow-400/60" viewBox="0 0 10 10">
                   <rect width="10" height="10" rx="2"></rect>
                 </svg>
                 <span>NOW</span>
               </a>
-              <a href="/linkroll" class="nav-item">
+              <a href="/linkroll" class="nav-item slash-pink">
                 <svg class="nav-square fill-red-400/60" viewBox="0 0 10 10">
                   <rect width="10" height="10" rx="2"></rect>
                 </svg>
@@ -146,7 +152,7 @@
               </a>
             </nav>
           </div>
-          <div class="styled-serif text-[18.5px] md:my-6 md:text-xl">
+          <div class="md:my-6 text-[18px] md:text-xl">
             <p>Hi, I'm Farhan!</p>
             <p class="my-4">
               I'm a computer science student pursuing a double major in CS and Math at the
