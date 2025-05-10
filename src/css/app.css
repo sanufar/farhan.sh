@@ -1,91 +1,29 @@
-/* ibm-plex-sans-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/plex-sans/ibm-plex-sans-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* ibm-plex-sans-italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: url('../fonts/plex-sans/ibm-plex-sans-v21-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* ibm-plex-sans-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/plex-sans/ibm-plex-sans-v21-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* ibm-plex-sans-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/plex-sans/ibm-plex-sans-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* ibm-plex-sans-700italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: url('../fonts/plex-sans/ibm-plex-sans-v21-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* merriweather-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/merriweather/merriweather-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* merriweather-italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 400;
-  src: url('../fonts/merriweather/merriweather-v31-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* merriweather-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/merriweather/merriweather-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* merriweather-700italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 700;
-  src: url('../fonts/merriweather/merriweather-v31-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
 @import "tailwindcss";
 
 @theme {
-    --font-sans:
-        "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-        "Noto Color Emoji";
+	--font-headline: Arial;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-    --font-serif: "Merriweather", system-ui;
+    --font-serif: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 
 	--breakpoint-xs: 24rem;
+
 }
 
 @layer components {
+	  .styled-serif {
+		@apply font-serif; 
+		@apply leading-[1.4];
+		@apply tracking-[-0.05px];
+		word-spacing: -1.35px;
+	}
+
+	.styled-sans {
+		@apply font-sans;
+		@apply leading-[1.5];
+		word-spacing: -0.75px;
+	}
+
 	.header-icon {
 		@apply sm:h-[28px] sm:w-[28px] h-[22px] w-[22px]
 	}
@@ -148,7 +86,7 @@
     }
 
     .blog-list-post-description {
-        @apply font-serif leading-7;
+        @apply text-[18.5px] leading-7;
     }
 
     .now-date-header {
