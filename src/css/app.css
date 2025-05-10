@@ -34,13 +34,48 @@
 	--breakpoint-xs: 24rem;
 }
 
+@layer utilities {
+  @keyframes animate {
+    from {
+      transform: translateY(-0.75rem);   
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate {
+    animation: animate 300ms var(--ease-out, cubic-bezier(0,0,.2,1)) forwards;
+    will-change: transform, opacity;
+  }
+
+  .stagger > * {
+    transform: translateY(-0.75rem);
+    opacity: 0;
+    animation: animate 300ms var(--ease-out, cubic-bezier(0,0,.2,1)) forwards;
+  }
+
+  .stagger > *:nth-child(1) { animation-delay: 0ms;   }
+  .stagger > *:nth-child(2) { animation-delay: 50ms;  }
+  .stagger > *:nth-child(3) { animation-delay: 100ms; }
+  .stagger > *:nth-child(4) { animation-delay: 150ms; }
+  .stagger > *:nth-child(5) { animation-delay: 200ms; }
+  .stagger > *:nth-child(6) { animation-delay: 250ms; }
+  .stagger > *:nth-child(7) { animation-delay: 300ms; }
+  .stagger > *:nth-child(8) { animation-delay: 350ms; }
+}
+
+
 @layer components {
-	  .styled-serif {
+  .styled-serif {
 		@apply font-serif; 
 		@apply leading-[1.4];
 		@apply tracking-[-0.05px];
 		word-spacing: -1.35px;
 	}
+
 
 	.header-icon {
 		@apply sm:h-[28px] sm:w-[28px] h-[22px] w-[22px]
