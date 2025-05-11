@@ -4,13 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/styles.css" />
-	<link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
-	<link rel="preload" href="../assets/fonts/manrope-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-	<link rel="preload" href="../assets/fonts/manrope-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-	<meta name="apple-mobile-web-app-title" content="Farhan S" />
-	<link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link
+      rel="preload"
+      href="../assets/fonts/manrope-v15-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="../assets/fonts/manrope-v15-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <meta name="apple-mobile-web-app-title" content="Farhan S" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
     <title>Now</title>
   </head>
   <body>
@@ -84,6 +96,55 @@
               </span>
             </div>
             <p class="text-slate-600">(created on May 07, 2025)</p>
+          </div>
+
+          <div class="pl-1">
+            <h2 class="now-date-header">May 10, 2025</h2>
+            <div>
+              <p class="my-4">
+                Currently sitting in an empty dorm room, about to move out. Recently found out about
+                <a class="link" target="_blank" rel="noopener noreferrer" href="https://zzz.dog"
+                  >Zdog</a
+                >! It seems like a super cool, lightweight 3D engine. I've been wanting to implement
+                an STL renderer for a while; maybe I'll try it with Zdog.
+              </p>
+              <p class="my-4">
+                Still haven't ported the site to a parser/SSG approach. I'll do that when I get
+                home. I've been yak-shaving on getting this website down in size. It used to be
+                ~4KB, but I wasn't able to get the default webfonts looking the way IBM Plex Sans
+                did. I decided to switch to Manrope. Each .woff2 file is roughly 14KB over the wire
+                - I still am doing a FOFT approach + preloading the necessary fonts. Unfortunately,
+                that means the site is a lot heavier - roughly 38KB now. I'll try to work on this
+                some more, but I really do like the way Manrope looks, and I've been struggling to
+                precisely match webfonts. I'll shave that yak when I get there.
+              </p>
+              <p class="my-4">
+                Speaking of fonts, while I was trying to match webfonts (see Arial :0) to ones I
+                liked better (Manrope, Atkinson Hyperlegible, etc etc.), I found Monica Dinculescu's
+                <a
+                  class="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://meowni.ca/font-style-matcher"
+                  >font-style-matcher</a
+                >
+                to be super useful. It basically just allows you to tweak two fonts side by side
+                based off of a few parameters (line spacing, letter spacing, word spacing, font
+                weight, and font size) and inspect the diffs. Font similarity seems to be a problem
+                that could be tackled with a good optimization algorithm.
+                <a class="link" target="_blank" rel="noopener noreferrer" href="https://fontjoy.com"
+                  >fontjoy.com</a
+                >
+                uses vector similarity to pair good contrasting fonts. While I've looked at bitmap
+                fonts (writing a
+                <a class="link" target="_blank" href="https://crates.io/crates/spleen-font"
+                  >PSF parser</a
+                >
+                helped!), .woff/.ttf fonts are totally foreign to me. I think font match
+                optimization could be an interesting problem! It'd definitely save me a lot of
+                headaches.
+              </p>
+            </div>
           </div>
 
           <div class="pl-1">
