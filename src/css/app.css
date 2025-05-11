@@ -37,7 +37,7 @@
 @layer utilities {
   @keyframes animate {
     from {
-      transform: translateY(-0.75rem);   
+      transform: translateY(-0.75rem);
       opacity: 0;
     }
     to {
@@ -70,7 +70,7 @@
 
 @layer components {
   .styled-serif {
-		@apply font-serif; 
+		@apply font-serif;
 		@apply leading-[1.4];
 		@apply tracking-[-0.05px];
 		word-spacing: -1.35px;
@@ -97,11 +97,11 @@
     }
 
 	.nav-item:not(:last-child)::after {
-	@apply md:hidden;	
+	@apply md:hidden;
 	  content: "";
-	  transform: rotate(15deg); 
-	  width: 2.75px; 
-	  height: 65%; 
+	  transform: rotate(15deg);
+	  width: 2.75px;
+	  height: 65%;
 	}
 
 	.slash-green::after {
@@ -175,7 +175,7 @@
     .project-link {
         @apply font-semibold text-lg underline text-blue-500 decoration-blue-500;
     }
-	
+
 	.link {
 		@apply underline text-blue-500
 	}
