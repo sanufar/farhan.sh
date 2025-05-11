@@ -13,7 +13,7 @@ tailwind-init:
 copy:
 	@cp -a src/. public/
 	@rm -rf public/css
-	@find public -type f -name '*.css' ! -path 'public/assets/*' -delete
+	@find public -type f -name '*.css' -o -name '*.md' ! -path 'public/assets/*' -delete
 
 format:
 	@npm run format

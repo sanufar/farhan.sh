@@ -177,7 +177,7 @@
     }
 
 	.link {
-		@apply underline text-blue-500
+		@apply underline text-blue-500 underline-offset-2;
 	}
 
     .linkroll-link {
