@@ -89,7 +89,7 @@
     }
 
     .nav-item-aux {
-        @apply md:text-base text-sm underline decoration-4;
+        @apply md:text-base text-sm underline decoration-2;
     }
 
     .nav-item {
@@ -100,7 +100,7 @@
 	@apply md:hidden;
 	  content: "";
 	  transform: rotate(15deg);
-	  width: 2.75px;
+	  width: 2.25px;
 	  height: 65%;
 	}
 
@@ -134,34 +134,40 @@
     }
 
     .nav-header {
-        @apply mb-4 justify-end flex flex-wrap gap-4 gap-y-1 font-mono;
+        @apply justify-end flex flex-wrap gap-4 gap-y-1 ;
     }
 
     .page-title {
         @apply flex flex-1 text-5xl font-bold;
     }
 
+	.blog-tag-search-link {
+		@apply text-xs sm:text-sm text-rose-600/75 pb-0 sm:self-end;
+	}
+
     .blog-year-list {
-        @apply my-1 hidden font-mono md:top-4 md:block md:pr-6 md:text-right;
-    }
-    .blog-list {
-        @apply border-slate-800/70 pb-8 md:min-w-0 md:flex-grow md:border-l-[2px] md:pl-6;
+        @apply my-1 text-lg hidden font-mono md:top-4 md:block md:pr-6 md:text-right;
     }
 
     .blog-year-header {
-        @apply text-xl font-bold tracking-tighter;
+        @apply text-2xl font-semibold md:text-[1.8em] tracking-tighter;
+		@apply text-slate-900/80 leading-12;
     }
 
     .blog-list-post-container {
-        @apply clear-both mt-1.5 mb-8;
+        @apply clear-both mt-1.5 mb-4;
+		@apply leading-none flex items-baseline gap-x-3;
     }
 
     .blog-list-post-title {
-        @apply border-b-[2px] text-lg border-b-slate-700 font-semibold hover:border-b-[3px];
+        @apply text-[1.1em] md:text-[1.5em] font-semibold text-slate-900/80; 
+		word-spacing: 2px;
     }
 
     .blog-list-post-date {
-        @apply ml-0.5 text-[0.825em] text-slate-500 italic;
+        @apply text-[0.8em] md:text-base text-slate-700/70 font-mono text-nowrap;
+		@apply tracking-[-0.05px];
+		word-spacing: -3px;
     }
 
     .blog-list-post-description {

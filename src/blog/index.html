@@ -29,12 +29,12 @@
     <div class="page-shell">
       <div>
         <div class="main-col">
-          <div class="mb-4 flex flex-1 items-center justify-between pl-1">
-            <a href="/" class="flex flex-col items-center">
+          <div class="mb-4 flex sm:flex-row flex-col items-center justify-between">
+            <a href="/" class="flex gap-2 items-center mb-1">
               <svg
                 viewBox="0 0 100 100"
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-[44px] w-[44px]"
+                class="h-[32px] w-[32px]"
               >
                 <defs>
                   <filter id="noise" x="-30%" y="-30%" width="160%" height="160%">
@@ -63,58 +63,54 @@
                   <circle cx="50" cy="50" r="10" class="fill-red-300" />
                 </g>
               </svg>
-              <p class="font-bold italic">farhan.sh</p>
+			<p class="text-2xl font-bold italic">farhan.sh</p>
             </a>
             <nav class="nav-header">
               <a href="/blog">
                 <span class="nav-item-aux decoration-green-600/60">BLOG</span>
               </a>
               <a href="/projects">
-                <span class="nav-item-aux decoration-lime-500/60">PROJECTS</span>
+                <span class="nav-item-aux decoration-amber-500/60">PROJECTS</span>
               </a>
-              <a href="/now">
-                <span class="nav-item-aux decoration-yellow-400/70">NOW</span>
-              </a>
-              <div class="ml-auto flex gap-4 sm:m-0 sm:w-auto sm:text-left">
-                <a href="/linkroll">
-                  <span class="nav-item-aux decoration-red-400/70">LINKROLL</span>
-                </a>
-                <a href="/misc">
-                  <span class="nav-item-aux decoration-zinc-600/70">MISC</span>
-                </a>
-              </div>
+			<a href="/now">
+			  <span class="nav-item-aux decoration-blue-500/60">NOW</span>
+			</a>
+			<a href="/linkroll">
+			  <span class="nav-item-aux decoration-red-600/60">LINKS</span>
+			</a>
+			<a href="/misc">
+			  <span class="nav-item-aux decoration-black/50">MISC</span>
+			</a>
             </nav>
           </div>
-          <div class="mb-6">
-            <div class="page-title">
-              <h1>BLOG</h1>
-            </div>
-            <p class="text-slate-600">Mostly about software.</p>
-          </div>
-
-          <div class="pl-1 md:flex">
-            <div class="blog-year-list">
-              <ul>
-                <li class="pb-1">
-                  <a href="#year_2025">2025</a>
-                </li>
-              </ul>
-            </div>
-            <div class="blog-list">
+			<div class="pl-0.5 pb-8 flex flex-col">
+			<div class="blog-tag-search-link">
+				<span>[tags]</span>	
+				<span>[search]</span>	
+			</div>
               <h2 id="year_2025" class="blog-year-header">2025</h2>
               <ul>
                 <li class="blog-list-post-container">
-                  <div class="mb-1">
-                    <a href="/" class="blog-list-post-title">First Post!</a>
-                    <span class="blog-list-post-date">April&nbsp;28,&nbsp;2025</span>
-                  </div>
-                  <p class="blog-list-post-description">
-                    Right now, I'm just sorting out templating and transitioning to a static site
-                    generator.
-                  </p>
+                    <span class="blog-list-post-date">Jun 11</span>
+                    <a href="/" class="blog-list-post-title">Font Replication Algorithms</a>
+                </li>
+                <li class="blog-list-post-container">
+                    <span class="blog-list-post-date">Jun 02</span>
+                    <a href="/" class="blog-list-post-title">Geofence-Based iOS Dead Drop Systems</a>
+                </li>
+				<li class="blog-list-post-container">
+                    <span class="blog-list-post-date">May 29</span>
+                    <a href="/" class="blog-list-post-title">Procedurally Generating ASCII Trees</a>
+                </li>
+				<li class="blog-list-post-container">
+                    <span class="blog-list-post-date">May 23</span>
+                    <a href="/" class="blog-list-post-title">Understanding Bitmap Fonts a Bit Better</a>
+                </li>
+				<li class="blog-list-post-container">
+                    <span class="blog-list-post-date">May 16</span>
+                    <a href="/" class="blog-list-post-title">How This Site is Made</a>
                 </li>
               </ul>
-            </div>
           </div>
         </div>
       </div>
