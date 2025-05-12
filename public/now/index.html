@@ -29,8 +29,8 @@
     <div class="page-shell">
       <div>
         <div class="main-col">
-                    <div class="mb-4 flex sm:flex-row flex-col items-center justify-between">
-            <a href="/" class="flex gap-2 items-center mb-1">
+          <div class="mb-4 flex flex-col items-center justify-between sm:flex-row">
+            <a href="/" class="mb-1 flex items-center gap-2">
               <svg
                 viewBox="0 0 100 100"
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@
                   <circle cx="50" cy="50" r="10" class="fill-red-300" />
                 </g>
               </svg>
-			<p class="text-2xl font-bold italic">farhan.sh</p>
+              <p class="text-2xl font-bold italic">farhan.sh</p>
             </a>
             <nav class="nav-header">
               <a href="/blog">
@@ -72,15 +72,15 @@
               <a href="/projects">
                 <span class="nav-item-aux decoration-amber-500/60">PROJECTS</span>
               </a>
-			<a href="/now">
-			  <span class="nav-item-aux decoration-blue-500/60">NOW</span>
-			</a>
-			<a href="/linkroll">
-			  <span class="nav-item-aux decoration-red-600/60">LINKS</span>
-			</a>
-			<a href="/misc">
-			  <span class="nav-item-aux decoration-black/50">MISC</span>
-			</a>
+              <a href="/now">
+                <span class="nav-item-aux decoration-blue-500/60">NOW</span>
+              </a>
+              <a href="/linkroll">
+                <span class="nav-item-aux decoration-red-600/60">LINKS</span>
+              </a>
+              <a href="/misc">
+                <span class="nav-item-aux decoration-black/50">MISC</span>
+              </a>
             </nav>
           </div>
 
@@ -97,84 +97,91 @@
             <p class="text-slate-600">(created on May 07, 2025)</p>
           </div>
 
-		<div class="flex flex-col gap-8">
-          <div class="pl-1">
-            <h2 class="now-date-header">May 10, 2025</h2>
-            <div>
-              <p class="my-4">
-                Currently sitting in an empty dorm room, about to move out. Recently found out about
-                <a class="link" target="_blank" rel="noopener noreferrer" href="https://zzz.dog"
-                  >Zdog</a
-                >! It seems like a super cool, lightweight 3D engine. I've been wanting to implement
-                an STL renderer for a while; maybe I'll try it with Zdog.
-              </p>
-              <p class="my-4">
-                Still haven't ported the site to a parser/SSG approach. I'll do that when I get
-                home. I've been yak-shaving on getting this website down in size. It used to be
-                ~4KB, but I wasn't able to get the default webfonts looking the way IBM Plex Sans
-                did. I decided to switch to Manrope. Each .woff2 file is roughly 14KB over the wire
-                - I still am doing a FOFT approach + preloading the necessary fonts. Unfortunately,
-                that means the site is a lot heavier - roughly 38KB now. I'll try to work on this
-                some more, but I really do like the way Manrope looks, and I've been struggling to
-                precisely match webfonts. I'll shave that yak when I get there.
-              </p>
-              <p class="my-4">
-                Speaking of fonts, while I was trying to match webfonts (see Arial :0) to ones I
-                liked better (Manrope, Atkinson Hyperlegible, etc etc.), I found Monica Dinculescu's
-                <a
-                  class="link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://meowni.ca/font-style-matcher"
-                  >font-style-matcher</a
-                >
-                to be super useful. It basically just allows you to tweak two fonts side by side
-                based off of a few parameters (line spacing, letter spacing, word spacing, font
-                weight, and font size) and inspect the diffs. Font similarity seems to be a problem
-                that could be tackled with a good optimization algorithm.
-                <a class="link" target="_blank" rel="noopener noreferrer" href="https://fontjoy.com"
-                  >fontjoy.com</a
-                >
-                uses vector similarity to pair good contrasting fonts. While I've looked at bitmap
-                fonts (writing a
-                <a class="link" target="_blank" href="https://crates.io/crates/spleen-font"
-                  >PSF parser</a
-                >
-                helped!), .woff/.ttf fonts are totally foreign to me. I think font match
-                optimization could be an interesting problem! It'd definitely save me a lot of
-                headaches.
-              </p>
+          <div class="flex flex-col gap-8">
+            <div class="pl-1">
+              <h2 class="now-date-header">May 10, 2025</h2>
+              <div>
+                <p class="my-4">
+                  Currently sitting in an empty dorm room, about to move out. Recently found out
+                  about
+                  <a class="link" target="_blank" rel="noopener noreferrer" href="https://zzz.dog"
+                    >Zdog</a
+                  >! It seems like a super cool, lightweight 3D engine. I've been wanting to
+                  implement an STL renderer for a while; maybe I'll try it with Zdog.
+                </p>
+                <p class="my-4">
+                  Still haven't ported the site to a parser/SSG approach. I'll do that when I get
+                  home. I've been yak-shaving on getting this website down in size. It used to be
+                  ~4KB, but I wasn't able to get the default webfonts looking the way IBM Plex Sans
+                  did. I decided to switch to Manrope. Each .woff2 file is roughly 14KB over the
+                  wire - I still am doing a FOFT approach + preloading the necessary fonts.
+                  Unfortunately, that means the site is a lot heavier - roughly 38KB now. I'll try
+                  to work on this some more, but I really do like the way Manrope looks, and I've
+                  been struggling to precisely match webfonts. I'll shave that yak when I get there.
+                </p>
+                <p class="my-4">
+                  Speaking of fonts, while I was trying to match webfonts (see Arial :0) to ones I
+                  liked better (Manrope, Atkinson Hyperlegible, etc etc.), I found Monica
+                  Dinculescu's
+                  <a
+                    class="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://meowni.ca/font-style-matcher"
+                    >font-style-matcher</a
+                  >
+                  to be super useful. It basically just allows you to tweak two fonts side by side
+                  based off of a few parameters (line spacing, letter spacing, word spacing, font
+                  weight, and font size) and inspect the diffs. Font similarity seems to be a
+                  problem that could be tackled with a good optimization algorithm.
+                  <a
+                    class="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://fontjoy.com"
+                    >fontjoy.com</a
+                  >
+                  uses vector similarity to pair good contrasting fonts. While I've looked at bitmap
+                  fonts (writing a
+                  <a class="link" target="_blank" href="https://crates.io/crates/spleen-font"
+                    >PSF parser</a
+                  >
+                  helped!), .woff/.ttf fonts are totally foreign to me. I think font match
+                  optimization could be an interesting problem! It'd definitely save me a lot of
+                  headaches.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="pl-1">
-            <h2 class="now-date-header">May 07, 2025</h2>
-            <div class="">
-              <p class="my-4">
-                I'm just about to wrap up with final exams! I'll be in Durham, NC over the summer
-                interning at
-                <span class="underline decoration-green-600 decoration-2 underline-offset-2"
-                  >Fidelity</span
-                >, so I've been making a list of nature trails to go explore.
-              </p>
-              <p class="my-4">
-                In other news, I've been working on porting my OS to Limine. Refactoring my
-                framebuffer implementation has brought up a few greatly needed architectural fixes I
-                had been putting off before :)
-              </p>
-              <p class="mt-4 underline">Currently:</p>
-              <ul class="ml-4 list-disc">
-                <li class="mb-1">
-                  Reading through
-                  <em>Database Internals</em> by Alex Petrov
-                </li>
-                <li class="mb-1">
-                  Working on a shared-nothing k/v store. LSM trees with trie memtables seem
-                  interesting! I'm looking at fanf's
-                  <a href="https://github.com/fanf2/qp">qp-tries</a>
-                  right now for pointers on space efficient prefix trees.
-                </li>
-              </ul>
+            <div class="pl-1">
+              <h2 class="now-date-header">May 07, 2025</h2>
+              <div class="">
+                <p class="my-4">
+                  I'm just about to wrap up with final exams! I'll be in Durham, NC over the summer
+                  interning at
+                  <span class="underline decoration-green-600 decoration-2 underline-offset-2"
+                    >Fidelity</span
+                  >, so I've been making a list of nature trails to go explore.
+                </p>
+                <p class="my-4">
+                  In other news, I've been working on porting my OS to Limine. Refactoring my
+                  framebuffer implementation has brought up a few greatly needed architectural fixes
+                  I had been putting off before :)
+                </p>
+                <p class="mt-4 underline">Currently:</p>
+                <ul class="ml-4 list-disc">
+                  <li class="mb-1">
+                    Reading through
+                    <em>Database Internals</em> by Alex Petrov
+                  </li>
+                  <li class="mb-1">
+                    Working on a shared-nothing k/v store. LSM trees with trie memtables seem
+                    interesting! I'm looking at fanf's
+                    <a href="https://github.com/fanf2/qp">qp-tries</a>
+                    right now for pointers on space efficient prefix trees.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
