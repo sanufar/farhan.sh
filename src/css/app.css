@@ -89,7 +89,7 @@
     }
 
     .nav-item-aux {
-        @apply md:text-base text-sm underline decoration-2;
+        @apply text-[0.9em] md:text-base underline decoration-2;
     }
 
     .nav-item {
