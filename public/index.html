@@ -29,13 +29,13 @@
     <div class="page-shell">
       <div class="main-col">
         <div class="flex flex-col justify-center gap-6 md:flex-row md:gap-16">
-          <div class="flex flex-col gap-0 md:gap-4">
-            <div class="items-top flex gap-4 md:w-[152px] md:flex-col md:gap-0">
+          <div class="flex flex-col gap-0 md:gap-4 -mx-8 -mt-8 p-8 pb-0 md:p-0 md:mx-0 md:mt-0">
+            <div class="items-top flex md:w-[152px] md:flex-col md:gap-0">
               <a href="/">
                 <svg
                   viewBox="0 0 100 100"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="mb-4 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] md:h-[120px] md:w-[120px]"
+                  class="hidden md:block mb-4 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] md:h-[120px] md:w-[120px]"
                 >
                   <defs>
                     <filter id="noise" x="-30%" y="-30%" width="160%" height="160%">
@@ -131,41 +131,39 @@
             </div>
 
             <nav
-              class="flex flex-wrap justify-end gap-x-2 border-b-2 text-[1.1em] md:mt-1 md:ml-0 md:flex-col md:gap-0 md:border-none md:font-medium"
+              class="flex text-[1.05em] gap-x-2 mt-6 md:mt-1 md:ml-0 flex-col gap-0"
             >
-              <a href="/blog" class="nav-item slash-green">
+              <a href="/blog" class="nav-item">
                 <svg class="nav-square fill-green-600/60" viewBox="0 0 10 10">
                   <rect width="10" height="10" rx="2"></rect>
                 </svg>
                 <span>BLOG</span>
+                <span class="ml-auto text-green-600/90 md:hidden">[↗]</span>
               </a>
-              <a href="/projects" class="nav-item slash-limegreen">
+              <a href="/projects" class="nav-item">
                 <svg class="nav-square fill-lime-500/60" viewBox="0 0 10 10">
                   <rect width="10" height="10" rx="2"></rect>
                 </svg>
                 <span>PROJECTS</span>
+                <span class="ml-auto md:hidden text-lime-500/90">[↗]</span>
               </a>
-              <a href="/now" class="nav-item slash-yellow">
+              <a href="/now" class="nav-item">
                 <svg class="nav-square fill-yellow-400/60" viewBox="0 0 10 10">
                   <rect width="10" height="10" rx="2"></rect>
                 </svg>
                 <span>NOW</span>
+                <span class="ml-auto md:hidden text-yellow-500/90">[↗]</span>
               </a>
-              <a href="/linkroll" class="nav-item slash-pink">
+              <a href="/linkroll" class="nav-item">
                 <svg class="nav-square fill-red-400/60" viewBox="0 0 10 10">
                   <rect width="10" height="10" rx="2"></rect>
                 </svg>
                 <span>LINKS</span>
-              </a>
-              <a href="/misc" class="nav-item">
-                <svg class="nav-square fill-zinc-600/60" viewBox="0 0 10 10">
-                  <rect width="10" height="10" rx="2"></rect>
-                </svg>
-                <span>MISC</span>
+                <span class="ml-auto md:hidden text-red-500/90">[↗]</span>
               </a>
             </nav>
           </div>
-          <div class="stagger md:my-6 md:text-xl">
+          <div class="stagger md:my-6 md:text-lg">
             <p>Hi, I'm Farhan!</p>
             <p class="my-4">
               I'm a computer science student pursuing a double major in CS and Math at the

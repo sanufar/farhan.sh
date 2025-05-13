@@ -96,13 +96,13 @@
         @apply flex items-center gap-2 md:mt-1.5 md:text-lg;
     }
 
-	.nav-item:not(:last-child)::after {
-	@apply md:hidden;
-	  content: "";
-	  transform: rotate(15deg);
-	  width: 2.25px;
-	  height: 65%;
-	}
+	/* .nav-item:not(:last-child)::after { */
+	/* @apply md:hidden; */
+	/*   content: ""; */
+	/*   transform: rotate(15deg); */
+	/*   width: 2.25px; */
+	/*   height: 65%; */
+	/* } */
 
 	.slash-green::after {
 		@apply bg-green-700;
@@ -126,7 +126,7 @@
     }
 
     .page-shell {
-        @apply flex min-h-[100svh] flex-col justify-between bg-amber-100/15 px-8 md:py-12 py-8 pb-0;
+        @apply flex min-h-[100svh] flex-col justify-between bg-[#f8f8f8] px-8 md:py-12 py-8 pb-0;
     }
 
     .main-col {
