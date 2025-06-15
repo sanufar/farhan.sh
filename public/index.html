@@ -11,88 +11,92 @@
     <link rel="manifest" href="/assets/site.webmanifest" />
     <title>Farhan Sanukri</title>
   </head>
-  <body class="flex flex-col min-h-svh">
+  <body class="flex min-h-svh flex-col">
     <div class="page-container antialiased">
-      <nav class="navbar navbar-left animate-on-load max-sm:w-full animate-from-left">
-
+      <nav class="navbar navbar-left animate-on-load animate-from-left max-sm:w-full">
         <div>
-            <a class="flex flex-col gap-x-2 sm:items-end" href="/">
-              <svg
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-                class="bounce-slow-low h-[2.25rem] w-[2.25rem] animate-bounce max-sm:hidden sm:mb-3 sm:ml-auto"
-             >
-                <defs>
-                  <filter id="noise" x="-30%" y="-30%" width="160%" height="160%">
-                    <feTurbulence
-                      type="fractalNoise"
-                      baseFrequency="0.12"
-                      numOctaves="6"
-                      seed="2"
-                      result="turb"
-                    ></feTurbulence>
-                    <feDisplacementMap
-                      in="SourceGraphic"
-                      in2="turb"
-                      scale="12"
-                      xChannelSelector="R"
-                      yChannelSelector="G"
-                    ></feDisplacementMap>
-                  </filter>
-                </defs>
+          <a class="flex flex-col gap-x-2 sm:items-end" href="/">
+            <svg
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+              class="bounce-slow-low h-[2.25rem] w-[2.25rem] animate-bounce max-sm:hidden sm:mb-3 sm:ml-auto"
+            >
+              <defs>
+                <filter id="noise" x="-30%" y="-30%" width="160%" height="160%">
+                  <feTurbulence
+                    type="fractalNoise"
+                    baseFrequency="0.12"
+                    numOctaves="6"
+                    seed="2"
+                    result="turb"
+                  ></feTurbulence>
+                  <feDisplacementMap
+                    in="SourceGraphic"
+                    in2="turb"
+                    scale="12"
+                    xChannelSelector="R"
+                    yChannelSelector="G"
+                  ></feDisplacementMap>
+                </filter>
+              </defs>
 
-                <g filter="url(#noise)">
-                  <circle cx="50" cy="50" r="50" class="fill-green-600"></circle>
-                  <circle cx="50" cy="50" r="40" class="fill-lime-500"></circle>
-                  <circle cx="50" cy="50" r="30" class="fill-yellow-400"></circle>
-                  <circle cx="50" cy="50" r="20" class="fill-amber-100"></circle>
-                  <circle cx="50" cy="50" r="10" class="fill-red-300"></circle>
-                </g>
-              </svg>
-              <div
-                class="flex flex-col items-end gap-y-0 border-b-2 border-gray-300 text-[1.35rem] leading-[1.5rem] font-medium max-sm:hidden"
+              <g filter="url(#noise)">
+                <circle cx="50" cy="50" r="50" class="fill-green-600"></circle>
+                <circle cx="50" cy="50" r="40" class="fill-lime-500"></circle>
+                <circle cx="50" cy="50" r="30" class="fill-yellow-400"></circle>
+                <circle cx="50" cy="50" r="20" class="fill-amber-100"></circle>
+                <circle cx="50" cy="50" r="10" class="fill-red-300"></circle>
+              </g>
+            </svg>
+            <div
+              class="flex flex-col items-end gap-y-0 border-b-2 border-gray-300 text-[1.35rem] leading-[1.5rem] font-medium max-sm:hidden"
+            >
+              <span>Farhan</span>
+              <span>Sanukri</span>
+            </div>
+            <span
+              class="text-pretty text-zinc-800 max-sm:text-[1.45rem] max-sm:font-medium sm:hidden"
+              >Farhan Sanukri</span
+            >
+          </a>
+          <ul class="navbar-primary">
+            <li class="nav-link max-sm:decoration-green-600/50"><a href="/blog">Blog</a></li>
+            <li class="nav-link max-sm:decoration-amber-500/50"><a href="/now">Projects</a></li>
+            <li class="nav-link max-sm:decoration-red-600/50"><a href="/now">Links</a></li>
+            <li class="nav-link max-sm:decoration-blue-500/50"><a href="/now">Now</a></li>
+          </ul>
+          <ul class="navbar-secondary">
+            <li class="nav-link-secondary">
+              <a class="nav-link-secondary-c" href="" target="_blank"
+                >Resume<span class="hidden font-[system-ui] text-xs max-sm:block">[↗]</span></a
               >
-                <span>Farhan</span>
-                <span>Sanukri</span>
-              </div>
-              <span class="text-pretty text-zinc-800 max-sm:text-[1.45rem] max-sm:font-medium sm:hidden"
-                >Farhan Sanukri</span
+            </li>
+            <li class="nav-link-secondary">
+              <a class="nav-link-secondary-c" href="" target="_blank"
+                >LinkedIn<span class="hidden font-[system-ui] text-xs max-sm:block">[↗]</span></a
               >
-            </a>
-            <ul class="navbar-primary">
-              <li class="nav-link max-sm:decoration-green-600/50"><a href="/blog">Blog</a></li>
-              <li class="nav-link max-sm:decoration-amber-500/50"><a href="/now">Projects</a></li>
-              <li class="nav-link max-sm:decoration-red-600/50"><a href="/now">Links</a></li>
-              <li class="nav-link max-sm:decoration-blue-500/50"><a href="/now">Now</a></li>
-            </ul>
-            <ul class="navbar-secondary">
-              <li class="nav-link-secondary">
-                <a class="nav-link-secondary-c" href="" target="_blank"
-                  >Resume<span class="hidden font-[system-ui] text-xs max-sm:block">[↗]</span></a
-                >
-              </li>
-              <li class="nav-link-secondary">
-                <a class="nav-link-secondary-c" href="" target="_blank"
-                  >LinkedIn<span class="hidden font-[system-ui] text-xs max-sm:block">[↗]</span></a
-                >
-              </li>
+            </li>
 
-              <li class="nav-link-secondary">
-                <a class="nav-link-secondary-c" href="" target="_blank"
-                  >Github<span class="hidden font-[system-ui] text-xs max-sm:block">[↗]</span></a
-                >
-              </li>
+            <li class="nav-link-secondary">
+              <a class="nav-link-secondary-c" href="" target="_blank"
+                >Github<span class="hidden font-[system-ui] text-xs max-sm:block">[↗]</span></a
+              >
+            </li>
 
-              <li class="nav-link-secondary">
-                <a class="max-sm:hidden" href="" target="_blank">Bluesky</a>
-              </li>
-            </ul>
+            <li class="nav-link-secondary">
+              <a class="max-sm:hidden" href="" target="_blank">Bluesky</a>
+            </li>
+          </ul>
         </div>
 
-        <img class="-translate-y-1 p-1 border border-zinc-300 rotate-9 hidden sm:hidden min-[376px]:inline-block ml-auto max-h-21 rounded-md object-contain" loading="lazy" src="assets/headshot_alt.webp"></img>
+        <img
+          class="ml-auto hidden max-h-21 -translate-y-1 rotate-9 rounded-md border border-zinc-300 object-contain p-1 min-[376px]:inline-block sm:hidden"
+          loading="lazy"
+          src="assets/headshot_alt.webp"
+        />
       </nav>
-      <main class="overflow-y-auto max-w-[540px] pt-2 subpixel-antialiased sm:pt-8">
-        <div class="flex flex-col gap-y-4 animate-on-load">
+      <main class="max-w-[540px] overflow-y-auto pt-2 subpixel-antialiased sm:pt-8">
+        <div class="animate-on-load flex flex-col gap-y-4">
           <p>
             Hi! I'm <span>Farhan Sanukri</span>. I'm currently studying computer science and math at
             the
@@ -112,12 +116,14 @@
             >
           </p>
         </div>
-        <div class="mt-6 flex flex-col gap-y-2 animate-on-load">
-          <div class="flex flex-row justify-between items-center">
-            <h1 class="text-[1.25em] font-light flex flex-row items-center gap-x-1 text-gray-500">
+        <div class="animate-on-load mt-6 flex flex-col gap-y-2">
+          <div class="flex flex-row items-center justify-between">
+            <h1 class="flex flex-row items-center gap-x-1 text-[1.25em] font-light text-gray-500">
               Work Experience<button class="text-[0.875em] text-green-600">[+]</button>
             </h1>
-            <a class="text-[0.875em] text-green-600 decoration-dotted underline" href="resume.pdf">[resume]</a>
+            <a class="text-[0.875em] text-green-600 underline decoration-dotted" href="resume.pdf"
+              >[resume]</a
+            >
           </div>
           <ul class="flex flex-col">
             <li>
@@ -157,76 +163,125 @@
             </li>
           </ul>
         </div>
-        <div class="mt-6 flex flex-col gap-y-2 animate-on-load">
-            <div class="flex flex-row justify-between items-center  group hover:bg-amber-100/50 ">
-              <h1 class="text-[1.25em] font-light flex flex-row items-center gap-x-1 text-gray-500 group-hover:text-zinc-800">
-                  Projects<button class="text-[0.875em] text-gray-500 group-hover:text-zinc-800">[↗]</button>
-              </h1>
-            </div>
-          <ul class="flex flex-col gap-y-4 group/project-list">
-              <li class="project-list-item group/item">
-                <a href="" class="project-link hover:bg-transparent"><span class="project-link-title">whisper-stream-rs</span><span class="project-link-arrow">↗</span></a>
-                <p class="text-[0.95em] text-gray-600">
-                  Live, local transcription with native audio intake in Rust
-                  via <code>cpal</code>, <code>rubato</code>, and Whisper Small.</p>
-              </li>
-              <li class="project-list-item group/item">
-                <a href="" class="project-link"><span class="project-link-title">Geode</span><span class="project-link-arrow">↗</span></a>
-                <p class="text-[0.95em] text-gray-600">An anonymous, encrypted filesharing app that lets you lock files within physical boundaries.
-                </p>
-              </li>
+        <div class="animate-on-load mt-6 flex flex-col gap-y-2">
+          <div class="group flex flex-row items-center justify-between hover:bg-amber-100/50">
+            <h1
+              class="flex flex-row items-center gap-x-1 text-[1.25em] font-light text-gray-500 group-hover:text-zinc-800"
+            >
+              Projects<button class="text-[0.875em] text-gray-500 group-hover:text-zinc-800">
+                [↗]
+              </button>
+            </h1>
+          </div>
+          <ul class="group/project-list flex flex-col gap-y-4">
             <li class="project-list-item group/item">
-              <a href="" class="project-link"><span class="project-link-title">keev</span><span class="project-link-arrow">↗</span></a>
+              <a href="" class="project-link hover:bg-transparent"
+                ><span class="project-link-title">whisper-stream-rs</span
+                ><span class="project-link-arrow">↗</span></a
+              >
               <p class="text-[0.95em] text-gray-600">
-                An LSM-tree based key/value database with a shared-nothing, shard-per-core approach (see <span>ScyllaDB</span>)
-                making use of <code>io_uring</code> via <a href="https://github.com/datadog/glommio" class="underline decoration-dotted"><code>glommio</code></a>.
+                Live, local transcription with native audio intake in Rust via <code>cpal</code>,
+                <code>rubato</code>, and Whisper Small.
               </p>
             </li>
             <li class="project-list-item group/item">
-              <a href="" class="project-link"><span class="project-link-title">Rover</span><span class="project-link-arrow">↗</span></a>
+              <a href="" class="project-link"
+                ><span class="project-link-title">Geode</span
+                ><span class="project-link-arrow">↗</span></a
+              >
               <p class="text-[0.95em] text-gray-600">
-                  Get live data on what bikesharing systems are near you - over 1000 systems across the world in real time, with price analysis and proximity prediction coming soon.
+                An anonymous, encrypted filesharing app that lets you lock files within physical
+                boundaries.
               </p>
             </li>
             <li class="project-list-item group/item">
-              <a href="https://crates.io/crates/spleen-font" class="project-link"><span class="project-link-title">spleen-font-rs</span><span class="project-link-arrow">↗</span></a>
+              <a href="" class="project-link"
+                ><span class="project-link-title">keev</span
+                ><span class="project-link-arrow">↗</span></a
+              >
               <p class="text-[0.95em] text-gray-600">
-                A PSF1/2 bitmap font parser, built for my operating system and
-                published on crates.io.
+                An LSM-tree based key/value database with a shared-nothing, shard-per-core approach
+                (see <span>ScyllaDB</span>) making use of <code>io_uring</code> via
+                <a href="https://github.com/datadog/glommio" class="underline decoration-dotted"
+                  ><code>glommio</code></a
+                >.
+              </p>
+            </li>
+            <li class="project-list-item group/item">
+              <a href="" class="project-link"
+                ><span class="project-link-title">Rover</span
+                ><span class="project-link-arrow">↗</span></a
+              >
+              <p class="text-[0.95em] text-gray-600">
+                Get live data on what bikesharing systems are near you - over 1000 systems across
+                the world in real time, with price analysis and proximity prediction coming soon.
+              </p>
+            </li>
+            <li class="project-list-item group/item">
+              <a href="https://crates.io/crates/spleen-font" class="project-link"
+                ><span class="project-link-title">spleen-font-rs</span
+                ><span class="project-link-arrow">↗</span></a
+              >
+              <p class="text-[0.95em] text-gray-600">
+                A PSF1/2 bitmap font parser, built for my operating system and published on
+                crates.io.
               </p>
             </li>
           </ul>
-          <p class="mt-4 underline self-end">More projects →</p>
+          <p class="mt-4 self-end underline">More projects →</p>
         </div>
       </main>
-      <div class="text-[15px] overflow-y-auto navbar subpixel-antialiased max-[900px]:hidden sm:pt-8
-          animate-on-load animate-from-right">
-          <div class="flex flex-wrap gap-x-8 gap-y-4">
-              <div>
-                  <!-- <img class="h-48 rounded-md object-contain" loading="lazy" src="assets/headshot_alt.webp"></img> -->
-                  <img class="h-48 rounded-md object-contain" loading="lazy" src="assets/headshot.webp"></img>
-                  <p class="mt-1 font-mono text-gray-500 text-sm">headshot.webp</p>
-              </div>
-              <div>
-                  <img class="max-h-48 rounded-md object-contain" loading="lazy" src="assets/shroompic.webp"></img>
-                  <p class="mt-1 font-mono text-gray-500 text-sm">more photos at <a class="underline">photos.farhan.sh</a></p>
-              </div>
+      <div
+        class="navbar animate-on-load animate-from-right overflow-y-auto text-[15px] subpixel-antialiased max-[900px]:hidden sm:pt-8"
+      >
+        <div class="flex flex-wrap gap-x-8 gap-y-4">
+          <div>
+            <img class="h-48 rounded-md object-contain" loading="lazy" src="assets/headshot.webp" />
+            <p class="mt-1 font-mono text-sm text-gray-500">headshot.webp</p>
           </div>
-          <div class="mt-4 flex flex-wrap gap-x-4 gap-y-4">
-              <div>
-                  <div class="min-h-60 max-w-54 rounded-md border border-gray-300 p-4">
-                      <div class="flex flex-row justify-between mb-4"><p>Linkroll</p><p>↗</p></div>
-                      <a href="https://db.cs.cmu.edu/papers/2018/mod601-zhangA-hm.pdf" class="underline decoration-dotted font-medium">SuRF: Practical Range Query Filtering with Fast Succinct Tries</a>
-                      <p class="mt-1 text-gray-500">LOUDS encoded tries can range filter where Bloom filters can't. <span class="underline text-zinc-700">More →</span></p></div>
-                  <!-- <p class="mt-1 font-mono text-gray-500 text-sm">more at <a class="underline">/links</a></p> -->
-              </div>
-              <div>
-                  <div class="min-h-60 max-w-54 rounded-md border border-gray-300 p-4">
-                      <div class="flex flex-row justify-between mb-4"><p>Now</p><p>↗</p></div>
-                      <p class="text-gray-500">Got this to work, doing that, started first week of internship, started this, started that, looking at CRDTs, researching, exploring durham, etc etc</p>
-                  </div>
-              </div>
+          <div>
+            <img
+              class="max-h-48 rounded-md object-contain"
+              loading="lazy"
+              src="assets/shroompic.webp"
+            />
+            <p class="mt-1 font-mono text-sm text-gray-500">
+              more photos at <a class="underline">photos.farhan.sh</a>
+            </p>
           </div>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-x-4 gap-y-4">
+          <div>
+            <div class="min-h-60 max-w-54 rounded-md border border-gray-300 p-4">
+              <div class="mb-4 flex flex-row justify-between">
+                <p>Linkroll</p>
+                <p>↗</p>
+              </div>
+              <a
+                href="https://db.cs.cmu.edu/papers/2018/mod601-zhangA-hm.pdf"
+                class="font-medium underline decoration-dotted"
+                >SuRF: Practical Range Query Filtering with Fast Succinct Tries</a
+              >
+              <p class="mt-1 text-gray-500">
+                LOUDS encoded tries can range filter where Bloom filters can't.
+                <span class="text-zinc-700 underline">More →</span>
+              </p>
+            </div>
+            <!-- <p class="mt-1 font-mono text-gray-500 text-sm">more at <a class="underline">/links</a></p> -->
+          </div>
+          <div>
+            <div class="min-h-60 max-w-54 rounded-md border border-gray-300 p-4">
+              <div class="mb-4 flex flex-row justify-between">
+                <p>Now</p>
+                <p>↗</p>
+              </div>
+              <p class="text-gray-500">
+                Got this to work, doing that, started first week of internship, started this,
+                started that, looking at CRDTs, researching, exploring durham, etc etc
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="mt-4 flex justify-center p-8 pt-4 text-gray-400">
@@ -234,15 +289,14 @@
       <p></p>
     </footer>
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const STAGGER = 100;                       // ms between each item
-      const targets = document.querySelectorAll('.animate-on-load');
+      document.addEventListener('DOMContentLoaded', () => {
+        const STAGGER = 100; // ms between each item
+        const targets = document.querySelectorAll('.animate-on-load');
 
-      targets.forEach((el, idx) => {
-        setTimeout(() => el.classList.add('is-visible'), idx * STAGGER);
+        targets.forEach((el, idx) => {
+          setTimeout(() => el.classList.add('is-visible'), idx * STAGGER);
+        });
       });
-    });
-
     </script>
   </body>
 </html>
