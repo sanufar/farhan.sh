@@ -4,7 +4,7 @@ export PATH := $(CURDIR)/node_modules/.bin:$(PATH)
 
 all: dev
 
-build-prod: tailwind-init copy format
+build-prod: copy tailwind-init format
 
 tailwind-init: 
 	npx tailwindcss -i ./content/css/app.css -o ./public/assets/styles.css --minify
