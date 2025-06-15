@@ -1,0 +1,17 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="h-[44px] w-[44px]">
+<defs>
+  <filter id="noise" x="-30%" y="-30%" width="160%" height="160%">
+	<feTurbulence type="fractalNoise" baseFrequency="0.12" numOctaves="6" seed="2" result="turb" />
+	<feDisplacementMap in="SourceGraphic" in2="turb" scale="12" xChannelSelector="R" yChannelSelector="G" />
+  </filter>
+</defs>
+
+<g filter="url(#noise)">
+  <circle cx="50" cy="50" r="50" fill ="#16A34A" />
+  <circle cx="50" cy="50" r="40" fill ="#84CC16" />
+  <circle cx="50" cy="50" r="30" fill ="#FACC15" />
+  <circle cx="50" cy="50" r="20" fill ="#FEF3C7" />
+  <circle cx="50" cy="50" r="10" fill ="#FCA5A5" />
+</g>
+</svg>
+
